@@ -1,5 +1,5 @@
 module.exports = {
 
-    mongoUrl: process.env.MONGOLAB_URI || 'mongodb://localhost/saldot',
+    mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost/saldot',
     harvestUrl: `https://${process.env.ORGANIZATION}.harvestapp.com`
 }
