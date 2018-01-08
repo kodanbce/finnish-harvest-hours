@@ -11,9 +11,9 @@ const mongoose = require('mongoose');
 const _ = require('lodash');
 const api = require('./api');
 const User = require('./schema/user');
-const consts = require('./consts')
+const consts = require('./consts');
 
-const app = express()
+const app = express();
 
 mongoose.connect(consts.mongoUrl);
 

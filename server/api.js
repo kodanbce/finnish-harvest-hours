@@ -2,8 +2,8 @@ const _ = require('lodash');
 const Promise = this.Promise || require('promise');
 const agent = require('superagent-promise')(require('superagent'), Promise);
 const holidays = require('finnish-holidays-js');
-const Session = require('./schema/session')
-const consts = require('./consts')
+const Session = require('./schema/session');
+const consts = require('./consts');
 
 function getUser(req) {
     return req.session.passport.user;
