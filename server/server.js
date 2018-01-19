@@ -126,22 +126,22 @@ app.get('/user', function (req, res) {
 });
 
 app.get('/holidays', function (req, res) {
-    res.send(api.finnishHolidays())
+    res.send(api.finnishHolidays());
 });
 
 app.get('/entries', function (req, res) {
-    api.fetchHourEntries(req, res)
+    api.fetchHourEntries(req, res);
 });
 
 function idStringToTasks(taskIds) {
     if (!taskIds) {
-        return []
+        return [];
     } else {
         return taskIds
             .split(',')
             .map(taskId => {
-                return { taskId: parseInt(taskId) }
-            })
+                return { taskId: parseInt(taskId) };
+            });
     }
 }
 
