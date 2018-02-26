@@ -2,7 +2,7 @@
   "name": "finnish-harvest-hours",
   "version": "0.0.1",
   "engines": {
-    "node": "9"
+    "node": ">=8"
   },
   "description": "Compare your total logged hours in Harvest with standard Finnish working hours",
   "main": "index.js",
@@ -24,6 +24,7 @@
   "dependencies": {
     "body-parser": "^1.14.2",
     "connect-mongo": "^1.1.0",
+    "dotenv": "^5.0.0",
     "express": "^4.13.4",
     "express-session": "^1.15.0",
     "finnish-holidays-js": "^1.1.0",
@@ -42,3 +43,4 @@
     "nodemon": "^1.11.0"
   }
 }
+
