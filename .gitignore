@@ -6,4 +6,5 @@ heroku_logs
 .env
 tmp
 .idea
-*.css
+kodan_saldo/*
+*.zip
