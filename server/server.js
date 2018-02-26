@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').config()
 
 const express = require('express');
 const request = require('superagent');
@@ -14,8 +15,11 @@ const User = require('./schema/user');
 const consts = require('./consts');
 
 const app = express();
+const options = {
+    useMongoClient: true
+};
 
-mongoose.connect(consts.mongoUrl);
+mongoose.connect(consts.mongoUrl, options);
 
 app.use(session({
     secret: process.env.SESSION_SECRET,
